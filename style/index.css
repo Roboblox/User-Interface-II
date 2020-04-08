@@ -1,1 +1,37 @@
 /* Add CSS styling here */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(187, 152, 219);
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+.navBar h2 {
+    color: orange;
+}
+.links {
+    display: flex;
+    width: 40%;
+    
+    align-items: center;
+}
+.home {
+    background-color: yellow;
+    color: white;
+}
+.about {
+    background-color: red;
+    color: white;
+}
+.content {
+    background-color: blue;
+    color: white;
+}
+.projects {
+    
+        background-color: green;
+        color: white;
+    }
