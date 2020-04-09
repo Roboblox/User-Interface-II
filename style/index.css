@@ -26,16 +26,21 @@ time, mark, audio, video {
 }
 .hidden {
     border: 0;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip; rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    margin: -1px;
+    clip: rect(1rem 1rem 1rem 1rem); /* IE6, IE7 */
+     
+    
+    height: 1rem;
+    margin: -1rem;
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 1px;
+    width: .1rem;
 }
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+     margin: 0;
+     padding: 0;
+}
 html{
     font-size:62.5%; /*62.5% means that 10px = 1 rem */
   }
@@ -49,20 +54,24 @@ html{
     
 }
 header h1 {
+    background-color:gray;
     text-align: center;
+    font-size: 3rem;
    
 }
 .navBar h2 {
     color: orange;
 }
 .links {
-    text-decoration: none;
+    
     display: flex;
     width: 40%;
     justify-content: flex-end;
     align-items: center;
 }
-
+a {
+    text-decoration: none;
+}
 .home {
     
     padding-right: 1rem;
@@ -86,19 +95,16 @@ header h1 {
     }
    
     .introBox {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: darkgoldenrod;
-        width: 80%;
+        width: 70%;
         height: 40rem;
-        margin: 5em 15em;
-        display: flex;
         
-        
-        
-        
-    }
+        margin: 8rem 15rem 8rem 15rem;
+        }
     .introBox h1 {
         font-size: 5rem;
         margin-bottom: 0;
@@ -139,6 +145,9 @@ footer h3 {
     display: flex;
     justify-self: center;
 }
-@media (max-width: 80rem) {
 
+@media (max-width) {
+    .introBox {
+        
+    }
 }
